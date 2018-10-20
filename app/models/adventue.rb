@@ -1,0 +1,2 @@
+class Adventue < ApplicationRecord
+end

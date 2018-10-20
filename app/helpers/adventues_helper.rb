@@ -1,0 +1,2 @@
+module AdventuesHelper
+end

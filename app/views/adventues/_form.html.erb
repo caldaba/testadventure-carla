@@ -1,0 +1,22 @@
+<%= form_with(model: adventue, local: true) do |form| %>
+  <% if adventue.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(adventue.errors.count, "error") %> prohibited this adventue from being saved:</h2>
+
+      <ul>
+      <% adventue.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :carla %>
+    <%= form.text_field :carla %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
